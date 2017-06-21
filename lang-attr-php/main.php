@@ -1,7 +1,7 @@
 
 <?php
    function lang_attr($doctype){
-       echo get_lang_attr($doctype);
+       echo get_lang_attr($doctype). "    ";
    }
    
    function get_lang_attr($doctype){
@@ -19,6 +19,8 @@
        return $output;
        
    }
+   
+   lang_attr('html');
    
    lang_attr('xhtml');
 ?>
